@@ -79,8 +79,8 @@ tint_options: [blue, purple, green, orange, pink]
 7. **슬랙 발송**: 위에서 받은 배포 URL을 Incoming Webhook으로 보낸다.
 ```bash
    curl -s -X POST "$SLACK_WEBHOOK_URL" \
-     -H 'Content-Type: application/json' \
-     -d '{"text":"🗞️ 오늘의 데일리 AI 뉴스레터 {Vol.NN} 발행 → [https://imakerjun.github.io/ai-newsletter/editions/{DATE}.html](https://yumijeung-vnco.github.io/perplexity-korea-newsletter/editions/{DATE}.html)\n아카이브: [https://yumijeung-vnco.github.io/perplexity-korea-newsletter/"]'
+  -H 'Content-Type: application/json' \
+  -d '{"text":"🗞️ Perplexity 코리아 브리핑 {Vol.NN} 발행 → https://yumijeung-vnco.github.io/perplexity-korea-newsletter/editions/{DATE}.html\n아카이브: https://yumijeung-vnco.github.io/perplexity-korea-newsletter/"}'
 ```
 
 ---
